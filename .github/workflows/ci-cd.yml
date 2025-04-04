@@ -22,7 +22,9 @@ jobs:
         dotnet-version: '8.0'
 
     - name: Restore dependencies
+      working-directory: ./BlazorProvaThiago 
       run: dotnet restore
 
     - name: Build project
+      working-directory: ./BlazorProvaThiago 
       run: dotnet publish -c Release -o build
